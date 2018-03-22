@@ -2,10 +2,7 @@
     width: 1000px;
     margin: 0px auto;
 }
-#header {
-    height: 100px;
-    width: 100%;
-}
+/* BODY */
 #body {
     padding: 3px 10px 0px 0px;
     background-image: linear-gradient(#f0f0f0 1%, white 30%);
@@ -14,14 +11,17 @@
     margin: 10px 30px 0px 5px;
     width: 25%;
 }
+.sidebar-box {
+    padding: 20px 0px;
+    border-bottom: 1px #c2c2c2 solid;
+}
 #body-main {
-    background-color: green;
     width: 70.5%;
 }
-#body-sidebar, #body-main {
-    display: inline-block;
-    vertical-align: top;
+.body-image {
+    width: 300px;
 }
+/* DOJO AD */
 #dojo-ad {
     margin: 20px 0px;
     padding: 20px;
@@ -34,18 +34,62 @@
 #dojo-ad img {
     margin: 10px 0px 15px 0px;
 }
-h1, h2, h3, h4, h5, h6, p {
+/* BREADCRUMBS */
+#breadcrumb-logo {
+    width: 3%;
+    padding-top: 5px;
+}
+#breadcrumbs {
+    padding-top: 13px;
+    width: 65%;
+    color: #22659e;
+}
+/* CONTACT INFO */
+#contact-logo {
+    width: 6.5%;
+}
+.contact-text {
+    font-size: 9px;
+}
+#contact-info {
+    padding-left: 5px;
+}
+#phone-number {
+    font-size: 24px;
+    line-height: 28px;
+}
+/* HIGHLIGHT BOX */
+#highlight-box {
+    border: 3px solid #108ce2;
+    margin: 20px 0px;
+    padding: 15px;
+}
+.highlight-text {
+    padding-left: 10px;
+    width: 75%;
+}
+.highlight-image {
+    width: 15%;
+}
+#highlight-box h4 {
+    padding-top: 0px; 
+}
+/* FONTS */
+h1, h2, h3, h4, h5, h6, p, a, span, ul, li {
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(85, 85, 85);
 }
-h1, h4, h5, h6 {
+p, a, ul, li {
+    font-size: 14px;
+    line-height: 16px;
+}
+h1, h4, h5, h6, #phone-number {
     font-weight: bold;
 }
 h3, h4, h5, h6 {
     padding-top: 15px;
 }
 h1 {
-    vertical-align: top;
     font-size: 40px;
     line-height: 80px;
 }
@@ -59,6 +103,11 @@ h2 {
 h3 {
     font-size: 24px;
     line-height: 27px;
+    color: white
+}
+h4 {
+    size: 20px;
+    padding-bottom: 8px;
 }
 h5 {
     font-size: 18px;
@@ -66,13 +115,12 @@ h5 {
 }
 h6 {
     line-height: 17px;
-}
-button, h3 {
-    color: white;
-}
-button, h6 {
     font-size: 15px;
 }
+p {
+    margin-bottom: 10px;
+}
+/* BUTTONS */
 button {
     margin: 3px 0px;
     width: 230px;
@@ -82,6 +130,8 @@ button {
     background-image: linear-gradient(#3c8cd0 20%, #22659e);
     box-shadow: 2px 2px 7px #9f9f9f;
     border: 1px #d2cfcf solid;
+    font-size: 15px;
+    color: white;
 }
 .orange-button {
     background-image: linear-gradient(#ecb566 20%, #ef7500);
@@ -91,16 +141,42 @@ button {
     margin: 3px auto;
     background-image: linear-gradient(#57ccde 20%, #01bddb);
 }
-.sidebar-box {
-    padding: 20px 0px;
-    border-bottom: 1px #c2c2c2 solid;
+/* LINKS */
+a, #phone-number {
+    color: #01c0df;
 }
+a {
+    text-decoration: none;
+}
+/* IMAGES */
+img {
+    margin: 0px auto;
+}
+ul, ol {
+    margin-left: 45px;
+}
+ul {
+    list-style-type: disc;
+}
+ol {
+    list-style-type: decimal;
+}
+li {
+    padding: 4px 0px 4px 4px;
+}
+/* STYLES */
 .inline-block {
     display: inline-block;
 }
-.white-background, #wrapper {
+.block {
+    display: block;
+}
+.white-background {
     background-color: white;
 }
 .blue {
     color: #22659e;
+}
+.vert-top {
+    vertical-align: top;
 }
